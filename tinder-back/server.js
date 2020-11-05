@@ -31,8 +31,7 @@ app.post('/tinder/cards', (req, res) => {
     Cards.create(dbCard, (err, data) => {
         if (err) {
             res.status(500).send(err)
-        }
-        else {
+        } else {
             res.status(201).send(data)
         }
     })
